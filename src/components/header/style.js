@@ -19,7 +19,9 @@ transform:translateY(${props =>{
     return "-60px"
    }
 }});
-
+display: flex;
+align-items:center;
+justify-content:center;
 transition:transform .5s ease-in-out;
 
 `

@@ -3,8 +3,9 @@ import SearchField from "../searchField/SearchField";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { SearchBarDiv, SearchFieldButton, SearchFieldDiv } from "./style";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import { setSearchError } from "../../store/store";
 function SearchBar({ setShow }) {
   const [user, setUser] = useState("");
   const navigate = useNavigate();
@@ -17,6 +18,7 @@ function SearchBar({ setShow }) {
     return state.auth.user;
   });
 
+  const dispatch = useDispatch();
 
   const onformSubmit = (e) => {
     e.preventDefault();
@@ -28,6 +30,7 @@ function SearchBar({ setShow }) {
       navigate(`/search/${user}`);
     } else {
       navigate("/login");
+      dispatch(setSearchError("Please Login To Proceed"));
     }
   };
   return ReactDOM.createPortal(
@@ -37,9 +40,7 @@ function SearchBar({ setShow }) {
           user={user}
           handleChange={handleChange}
         />
-        <SearchFieldButton>
-          Search
-        </SearchFieldButton>
+        <SearchFieldButton>Search</SearchFieldButton>
       </SearchFieldDiv>
 
       <AiOutlineCloseCircle

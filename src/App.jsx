@@ -20,6 +20,7 @@ import { useDispatch } from "react-redux";
 import { login, logout } from "./store/store";
 import { Loader } from "./components";
 import Repos from "./pages/repos/Repos";
+import { ErrorMessageDiv } from "./style/Container";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -74,16 +75,19 @@ function App() {
         }
       })
       .catch((error) => {
-        console.log(error);
+        setErrors(error.message);
       })
       .finally(() => {
         setLoading(false);
       });
   }, []);
 
+
+
   return (
     <ThemeProvider theme={darkTheme}>
       {loading ? <Loader /> : <RouterProvider router={router} />}
+
       <GlobalStyle />
     </ThemeProvider>
   );

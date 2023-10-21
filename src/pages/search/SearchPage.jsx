@@ -11,7 +11,6 @@ function SearchPage() {
   const { data, isLoading, isFetching, error } =
     useFetchSearchedUserQuery(query);
 
-console.log(data)
   if (isLoading || isFetching) {
     return (
       <UsersMain>

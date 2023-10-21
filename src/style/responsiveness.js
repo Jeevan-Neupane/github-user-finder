@@ -28,3 +28,10 @@ export const mobile = (props) => {
     }
     `
 }
+export const smallMobile = (props) => {
+    return css`
+    @media (max-width:450px) {
+        ${props}
+    }
+    `
+}

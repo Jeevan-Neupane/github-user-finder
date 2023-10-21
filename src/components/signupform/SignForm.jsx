@@ -90,7 +90,7 @@ function SignForm() {
         >
           <InputWrapper>
             <Input
-              label='Full Name'
+              label='Username'
               placeholder='Enter Your Full Name'
               {...register("username", {
                 required: {

@@ -57,6 +57,7 @@ flex:1;
 export const Heading = styled.h2`
 font-size:3rem;
 margin-bottom:2rem;
+
 color:${props=>props.theme.secialTextOne};
 `
 export const Form = styled.form`
@@ -81,7 +82,7 @@ color:${props=>props.theme.text};
 `
 export const LoginDiv = styled.div`
 display: flex;
-margin-top:1rem;
+margin-top:3rem;
 `
 export const LoginText = styled.p`
 font-size:2rem;

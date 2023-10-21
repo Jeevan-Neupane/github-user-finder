@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { laptop, mobile, tablet } from "../../style/responsiveness";
+import { laptop, mobile, smallMobile, tablet } from "../../style/responsiveness";
 export const OuterrDiv = styled.div`
 margin:5rem;
 `
@@ -86,15 +86,22 @@ export const RightDiv = styled.div`
 display: flex;
 flex-direction:column;
 justify-content:center;
+${laptop({
+    gap:"2rem"
+})}
 
 `
 
 export const BioDiv = styled.div`
 flex:1;
+
 `
 
 export const BioHeading = styled.h3`
 font-size:3rem;
+${laptop({
+    fontSize:"2rem"
+})}
 `
 
 export const BioDesc = styled.p`
@@ -120,7 +127,9 @@ margin-right:2rem;
 span{
     flex:1;
 }
-
+${smallMobile({
+    fontSize:"1.2rem"
+})}
 
 `
 
@@ -133,7 +142,9 @@ margin-right:2rem;
 span{
     flex:1;
 }
-
+${smallMobile({
+    fontSize:"1.2rem"
+})}
 `
 
 export const Website = styled.p`
@@ -145,6 +156,10 @@ margin-right:2rem;
 span{
     flex:1;
 }
+
+${smallMobile({
+    fontSize:"1.2rem"
+})}
 
 `
 
@@ -160,6 +175,7 @@ gap:3rem;
 ${tablet({
     width: "100%"
 })}
+
 `
 
 export const NumDetail = styled.div`

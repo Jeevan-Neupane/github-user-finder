@@ -49,7 +49,7 @@ span{
 }
 
 ${mobile({
-    fontSize: "2rem"
+    fontSize: "3rem"
 })}
 
 font-weight:600;

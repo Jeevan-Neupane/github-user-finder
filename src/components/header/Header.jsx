@@ -14,7 +14,7 @@ import {
 import { useSelector } from "react-redux";
 import Logout from "../logoutButton/Logout";
 import { useEffect, useRef, useState } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Search from "../search/Search";
 import { useLocation } from "react-router-dom";
 import UserBox from "../userbox/UserBox";
@@ -142,7 +142,7 @@ function Header() {
           {pathname !== "/" && <Search />}
           {user && <Logout />}
           <MenuIconsDiv onClick={onMenuClick}>
-            <AiOutlineMenu />
+            {menuShow ? <AiOutlineClose /> : <AiOutlineMenu />}
           </MenuIconsDiv>
         </MenuLoginUserDiv>
       </NavWrapper>

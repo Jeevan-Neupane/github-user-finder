@@ -11,7 +11,7 @@ function SearchField({ handleChange, user }) {
       placeholder='search user'
       onChange={handleChange}
       required
-      autoFocus
+      
     />
   );
 }

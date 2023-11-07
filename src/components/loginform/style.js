@@ -82,7 +82,7 @@ color:${props=>props.theme.text};
 `
 export const LoginDiv = styled.div`
 display: flex;
-margin-top:3rem;
+margin-top:2rem;
 `
 export const LoginText = styled.p`
 font-size:2rem;

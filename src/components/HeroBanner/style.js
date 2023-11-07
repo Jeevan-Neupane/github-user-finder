@@ -11,7 +11,7 @@ flex-direction:column;
 export const WelcomeText = styled.h3`
 font-size:10rem;
 font-family:${props => props.theme.font_family_two};
-color:${props => props.theme.header_footer};
+color:${props => props.theme.text};
 text-shadow: 5px -4px 7px ${props => props.theme.specialTextTwo};
 ${mobile({
     fontSize: "5rem"
@@ -21,11 +21,13 @@ ${mobile({
 export const Desc = styled.p`
 font-size:3rem;
 letter-spacing:3px;
-color:${props => props.theme.header_footer};
+color:${props => props.theme.text};
 ${mobile({
     fontSize: "2rem"
 })}
 text-align:center;
+font-weight:800;
+text-shadow: 5px -4px 7px ${props => props.theme.body};
 `
 export const SearchDiv = styled.form`
 margin-top:2rem;

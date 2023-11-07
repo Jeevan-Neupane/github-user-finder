@@ -97,10 +97,7 @@ function SignForm() {
                   value: true,
                   message: "Required",
                 },
-                pattern: {
-                  value: /^[a-zA-Z]+$/,
-                  message: "Username contains a-z and A-Z only",
-                },
+              
               })}
             />
             {username?.message && (

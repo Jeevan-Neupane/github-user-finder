@@ -91,7 +91,7 @@ function SignForm() {
           <InputWrapper>
             <Input
               label='Username'
-              placeholder='Enter Your Full Name'
+              placeholder='Enter Your First Name'
               {...register("username", {
                 required: {
                   value: true,

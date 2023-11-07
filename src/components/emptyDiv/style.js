@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { laptop } from "../../style/responsiveness";
 
 
 export const EmptyDiv = styled.div`
@@ -12,11 +13,15 @@ width:100%;
 
 export const Message = styled.div`
 font-size:5rem;
-color:${props=>props.theme.specialTextTwo};
-font-family:${props=>props.theme.font_family_two};
+color:${props => props.theme.specialTextTwo};
+font-family:${props => props.theme.font_family_two};
 span{
-    color:${props=>props.theme.secialTextOne};
+    color:${props => props.theme.secialTextOne};
     font-weight:800;
 
 }
+
+${laptop({
+    fontSize: "3rem"
+})}
 `

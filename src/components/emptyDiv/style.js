@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptop } from "../../style/responsiveness";
+import { laptop, mobile } from "../../style/responsiveness";
 
 
 export const EmptyDiv = styled.div`
@@ -23,5 +23,9 @@ span{
 
 ${laptop({
     fontSize: "3rem"
+})}
+
+${mobile({
+    fontSize: "2rem"
 })}
 `

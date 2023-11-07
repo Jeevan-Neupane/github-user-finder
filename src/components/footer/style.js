@@ -39,6 +39,9 @@ text-align:center;
 width:60%;
 margin:auto;
 margin-bottom:2rem;
+p{
+    color:${props=>props.theme.specialTextTwo};
+}
 `
 
 
@@ -52,7 +55,8 @@ font-size:3rem;
 
 `
 
-export const Icon = styled.div`
+export const Icon = styled.a`
+color:inherit;
 background-color:#04152d;
 padding:1rem;
 border-radius:50%;

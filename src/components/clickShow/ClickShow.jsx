@@ -15,7 +15,6 @@ function ClickShow({ displayNumber, data }) {
   const [showNumber, setShowNumber] = useState(0);
   let numbersToBeDisplayed = Math.ceil(data?.length / displayNumber);
 
-
   const numberArray = new Array(numbersToBeDisplayed);
   for (let i = 0; i < numberArray?.length; i++) {
     numberArray[i] = i;
@@ -64,7 +63,7 @@ function ClickShow({ displayNumber, data }) {
                   setShowNumber(num);
                 }}
               >
-                {num}
+                {num + 1}
               </Number>
             );
           })}

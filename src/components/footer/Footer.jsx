@@ -8,11 +8,11 @@ import {
   LinkDiv,
   Links,
 } from "./style";
-import { BsFacebook } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiOutlineInstagram,
   AiFillLinkedin,
+  AiFillGithub,
 } from "react-icons/ai";
 function Footer() {
   const footerLinks = [
@@ -37,18 +37,31 @@ function Footer() {
           perferendis, repellat ab quod! Sunt totam nisi deleniti consequatur
           maxime ipsam, qui hic excepturi beatae inventore architecto ad
           accusantium voluptates eius explicabo quia ut nam!
+          <p>By Jeevan Neupane</p>
         </ContentDiv>
         <IconDiv>
-          <Icon>
-            <BsFacebook />
+          <Icon
+            href='https://github.com/Jeevan-Neupane'
+            target='_blank'
+          >
+            <AiFillGithub />
           </Icon>
-          <Icon>
+          <Icon
+            href='https://twitter.com/JeevanNeup38484'
+            target='_blank'
+          >
             <AiFillTwitterCircle />
           </Icon>
-          <Icon>
+          <Icon
+            href='https://www.instagram.com/jeevan.neupane03/'
+            target='_blank'
+          >
             <AiOutlineInstagram />
           </Icon>
-          <Icon>
+          <Icon
+            href='https://www.linkedin.com/in/jeevan-neupane-16a407258/'
+            target='_blank'
+          >
             <AiFillLinkedin />
           </Icon>
         </IconDiv>

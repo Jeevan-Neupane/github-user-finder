@@ -22,7 +22,6 @@ function Logout() {
       navigate("/");
     } catch (error) {
       setLogoutLoading(false);
-      console.log("Logout Btn Errorr", error);
     }
   };
 

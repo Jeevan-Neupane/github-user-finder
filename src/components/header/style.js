@@ -12,13 +12,13 @@ top:0;
 left:0;
 right:0;
 height:60px;
-transform:translateY(${props =>{
-   if(props.show){
-    return "0px"
-   }else{
-    return "-60px"
-   }
-}});
+transform:translateY(${props => {
+        if (props.show) {
+            return "0px"
+        } else {
+            return "-60px"
+        }
+    }});
 display: flex;
 align-items:center;
 justify-content:center;
@@ -39,7 +39,9 @@ justify-content:center;
 
 `
 
-const LogoText = styled.h1`
+const LogoText = styled(NavLink)`
+color:${props => props.theme.text};
+text-decoration:none;
 font-size:3.5rem;
 font-family:${props => props.theme.font_family_two};
 span{
@@ -47,8 +49,10 @@ span{
 }
 
 ${mobile({
-    fontSize:"2rem"
+    fontSize: "2rem"
 })}
+
+font-weight:600;
 
 `
 
@@ -57,15 +61,15 @@ display: flex;
 gap:7rem;
 transition:display .2s ease-in-out;
 ${laptop({
- position: "absolute",
-  top: "100%",
-  flexDirection: "column",
-  left: "0",
-  right: "0",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: "2rem",
-  backgroundColor:"black"
+    position: "absolute",
+    top: "100%",
+    flexDirection: "column",
+    left: "0",
+    right: "0",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "2rem",
+    backgroundColor: "black"
 })}
 
 

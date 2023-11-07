@@ -94,7 +94,7 @@ function Header() {
     <Nav show={show}>
       <NavWrapper>
         <Logo>
-          <LogoText>
+          <LogoText to='/'>
             Github <span>Finder</span>
           </LogoText>
         </Logo>

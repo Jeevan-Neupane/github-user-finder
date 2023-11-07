@@ -39,6 +39,7 @@ function SearchBar({ setShow }) {
         <SearchField
           user={user}
           handleChange={handleChange}
+          autoFocus
         />
         <SearchFieldButton>Search</SearchFieldButton>
       </SearchFieldDiv>
